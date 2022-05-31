@@ -1,9 +1,13 @@
-import './App.css';
+import {maps} from './data/maps'
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <h1>hello</h1>
+    <div style={{display: 'flex', flexDirection: 'column'}}>
+     <div style={{display: 'flex', flexWrap: 'wrap'}}>
+      {maps.map(item => (
+        <p style={{margin: 5, cursor: 'pointer'}} key={item.title}>{item.title}</p>
+      ))}
+    </div>
     </div>
   );
 }

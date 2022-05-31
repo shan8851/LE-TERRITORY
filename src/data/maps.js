@@ -1,4 +1,4 @@
-export const Maps = [
+export const maps = [
   {
     title: 'Brighton',
     mapUrl: (
